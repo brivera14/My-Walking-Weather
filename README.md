@@ -1,4 +1,4 @@
-# My-Walking-Weather
+# My Walking Weather
 
 ## PURPOSE
 Nowdays travelers around the world plan their trips ahead of time.
