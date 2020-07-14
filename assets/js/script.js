@@ -131,11 +131,16 @@ var displayForecastWeather = function (response2) {
     
     // Display the information selecter from the API Response
     var titleEl = document.createElement("div");
-    var dateEl = document.createElement("h3");
-    dateEl.textContent = response2.list[6].dt_txt;
+    var dateEl = document.createElement("h5");
+    dateEl.className = "card-title";
+    var fcdateEl = response2.list[6].dt_txt;
+    var fcDate = fcdateEl.substr(0,10);
+    dateEl.textContent =  moment(fcDate).format('MM/DD/YYYY');
     var tempEl = document.createElement("p");
-    tempEl.textContent = "Temperature: " + response2.list[6].main.temp + "°F";
+    tempEl.className = "card-text";
+    tempEl.textContent = "Temp: " + response2.list[6].main.temp + "°F";
     var humEl = document.createElement("p");
+    humEl.className = "card-text";
     humEl.textContent = "Humidity: " + response2.list[6].main.humidity + "%";
     var weatherEl = response2.list[6].weather[0].main;
 
@@ -162,7 +167,7 @@ var displayForecastWeather = function (response2) {
         forecastIcon.setAttribute("src", "http://openweathermap.org/img/wn/13d.png");
         forecastIcon.setAttribute("style", "height: 60px; width: 60px");
     }
-    //titleEl.appendChild(dateEl);
+    titleEl.appendChild(dateEl);
     titleEl.appendChild(forecastIcon);
     titleEl.appendChild(tempEl);
     titleEl.appendChild(humEl);
@@ -175,11 +180,16 @@ var displayForecastWeather = function (response2) {
     
     // Display the information selecter from the API Response
     var titleEl = document.createElement("div");
-    var dateEl = document.createElement("h3");
-    dateEl.textContent = response2.list[14].dt_txt;
+    var dateEl = document.createElement("h5");
+    dateEl.className = "card-title";
+    var fcdateEl = response2.list[14].dt_txt;
+    var fcDate = fcdateEl.substr(0,10);
+    dateEl.textContent =  moment(fcDate).format('MM/DD/YYYY');
     var tempEl = document.createElement("p");
-    tempEl.textContent = "Temperature: " + response2.list[14].main.temp + "°F";
+    tempEl.className = "card-text";
+    tempEl.textContent = "Temp: " + response2.list[14].main.temp + "°F";
     var humEl = document.createElement("p");
+    humEl.className = "card-text";
     humEl.textContent = "Humidity: " + response2.list[14].main.humidity + "%";
     var weatherEl = response2.list[14].weather[0].main;
 
@@ -206,7 +216,7 @@ var displayForecastWeather = function (response2) {
         forecastIcon.setAttribute("src", "http://openweathermap.org/img/wn/13d.png");
         forecastIcon.setAttribute("style", "height: 60px; width: 60px");
     }
-    //titleEl.appendChild(dateEl);
+    titleEl.appendChild(dateEl);
     titleEl.appendChild(forecastIcon);
     titleEl.appendChild(tempEl);
     titleEl.appendChild(humEl);
@@ -219,11 +229,16 @@ var displayForecastWeather = function (response2) {
     
     // Display the information selecter from the API Response
     var titleEl = document.createElement("div");
-    var dateEl = document.createElement("h3");
-    dateEl.textContent = response2.list[22].dt_txt;
+    var dateEl = document.createElement("h5");
+    dateEl.className = "card-title";
+    var fcdateEl = response2.list[22].dt_txt;
+    var fcDate = fcdateEl.substr(0,10);
+    dateEl.textContent =  moment(fcDate).format('MM/DD/YYYY');
     var tempEl = document.createElement("p");
-    tempEl.textContent = "Temperature: " + response2.list[22].main.temp + "°F";
+    tempEl.className = "card-text";
+    tempEl.textContent = "Temp: " + response2.list[22].main.temp + "°F";
     var humEl = document.createElement("p");
+    humEl.className = "card-text";
     humEl.textContent = "Humidity: " + response2.list[22].main.humidity + "%";
     var weatherEl = response2.list[22].weather[0].main;
 
@@ -250,7 +265,7 @@ var displayForecastWeather = function (response2) {
         forecastIcon.setAttribute("src", "http://openweathermap.org/img/wn/13d.png");
         forecastIcon.setAttribute("style", "height: 60px; width: 60px");
     }
-    //titleEl.appendChild(dateEl);
+    titleEl.appendChild(dateEl);
     titleEl.appendChild(forecastIcon);
     titleEl.appendChild(tempEl);
     titleEl.appendChild(humEl);
@@ -263,11 +278,16 @@ var displayForecastWeather = function (response2) {
     
     // Display the information selecter from the API Response
     var titleEl = document.createElement("div");
-    var dateEl = document.createElement("h3");
-    dateEl.textContent = response2.list[30].dt_txt;
+    var dateEl = document.createElement("h5");
+    dateEl.className = "card-title";
+    var fcdateEl = response2.list[30].dt_txt;
+    var fcDate = fcdateEl.substr(0,10);
+    dateEl.textContent =  moment(fcDate).format('MM/DD/YYYY');
     var tempEl = document.createElement("p");
-    tempEl.textContent = "Temperature: " + response2.list[30].main.temp + "°F";
+    tempEl.className = "card-text";
+    tempEl.textContent = "Temp: " + response2.list[30].main.temp + "°F";
     var humEl = document.createElement("p");
+    humEl.className = "card-text";
     humEl.textContent = "Humidity: " + response2.list[30].main.humidity + "%";
     var weatherEl = response2.list[30].weather[0].main;
 
@@ -294,7 +314,7 @@ var displayForecastWeather = function (response2) {
         forecastIcon.setAttribute("src", "http://openweathermap.org/img/wn/13d.png");
         forecastIcon.setAttribute("style", "height: 60px; width: 60px");
     }
-    //titleEl.appendChild(dateEl);
+    titleEl.appendChild(dateEl);
     titleEl.appendChild(forecastIcon);
     titleEl.appendChild(tempEl);
     titleEl.appendChild(humEl);
@@ -307,11 +327,16 @@ var displayForecastWeather = function (response2) {
     
     // Display the information selecter from the API Response
     var titleEl = document.createElement("div");
-    var dateEl = document.createElement("h3");
-    dateEl.textContent = response2.list[38].dt_txt;
+    var dateEl = document.createElement("h5");
+    dateEl.className = "card-title";
+    var fcdateEl = response2.list[38].dt_txt;
+    var fcDate = fcdateEl.substr(0,10);
+    dateEl.textContent =  moment(fcDate).format('MM/DD/YYYY');
     var tempEl = document.createElement("p");
-    tempEl.textContent = "Temperature: " + response2.list[38].main.temp + "°F";
+    tempEl.className = "card-text";
+    tempEl.textContent = "Temp: " + response2.list[38].main.temp + "°F";
     var humEl = document.createElement("p");
+    humEl.className = "card-text";
     humEl.textContent = "Humidity: " + response2.list[38].main.humidity + "%";
     var weatherEl = response2.list[38].weather[0].main;
 
@@ -338,7 +363,7 @@ var displayForecastWeather = function (response2) {
         forecastIcon.setAttribute("src", "http://openweathermap.org/img/wn/13d.png");
         forecastIcon.setAttribute("style", "height: 60px; width: 60px");
     }
-    //titleEl.appendChild(dateEl);
+    titleEl.appendChild(dateEl);
     titleEl.appendChild(forecastIcon);
     titleEl.appendChild(tempEl);
     titleEl.appendChild(humEl);
